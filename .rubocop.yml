@@ -1,0 +1,57 @@
+AllCops:
+  TargetRubyVersion: 2.4
+  Exclude:
+    - spec/**/*
+    - .bundle/**/*
+    - bin/**/*
+    - vendor/**/*
+    - tmp/**/*
+    - log/**/*
+    - Rakefile
+    - gruf-sentry.gemspec
+
+Lint/AmbiguousOperator:
+  Exclude:
+    - lib/gruf/sentry/configuration.rb
+
+Layout/EndAlignment:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 147
+
+Metrics/ClassLength:
+  Max: 406
+
+Metrics/CyclomaticComplexity:
+  Max: 12
+
+Layout/LineLength:
+  Max: 140
+
+Metrics/MethodLength:
+  Max: 88
+
+Metrics/ModuleLength:
+  Max: 1000
+
+Metrics/ParameterLists:
+  Max: 9
+
+Metrics/PerceivedComplexity:
+  Max: 12
+
+Naming/PredicateName:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Style/HashEachMethods:
+  Enabled: false
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
