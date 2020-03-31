@@ -1,6 +1,6 @@
 # gruf-sentry - Sentry reporting for gruf
 
-[![CircleCI](https://circleci.com/gh/bigcommerce/gruf-sentry/tree/master.svg?style=svg&circle-token=271adb0c4e7bdb76a427b47fd9bfd6f988170932)](https://circleci.com/gh/bigcommerce/gruf-sentry/tree/master) [![Gem Version](https://badge.fury.io/rb/gruf-sentry.svg)](https://badge.fury.io/rb/gruf-sentry) [![Inline docs](http://inch-ci.org/github/bigcommerce/gruf-sentry.svg?branch=master)](http://inch-ci.org/github/bigcommerce/gruf-sentry)
+[![CircleCI](https://circleci.com/gh/bigcommerce/gruf-sentry/tree/master.svg?style=svg)](https://circleci.com/gh/bigcommerce/gruf-sentry/tree/master) [![Gem Version](https://badge.fury.io/rb/gruf-sentry.svg)](https://badge.fury.io/rb/gruf-sentry) [![Inline docs](http://inch-ci.org/github/bigcommerce/gruf-sentry.svg?branch=master)](http://inch-ci.org/github/bigcommerce/gruf-sentry)
 
 Adds Sentry error reporting support for [gruf](https://github.com/bigcommerce/gruf) 2.7.0+.
 
