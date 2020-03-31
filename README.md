@@ -4,6 +4,8 @@
 
 Adds Sentry error reporting support for [gruf](https://github.com/bigcommerce/gruf) 2.7.0+.
 
+This gem will automatically report grpc failures and Gruf errors into Sentry as they happen in servers and clients.
+
 ## Installation
 
 Simply install the gem:
