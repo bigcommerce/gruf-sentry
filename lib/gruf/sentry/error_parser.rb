@@ -40,7 +40,7 @@ module Gruf
       # @return [Array]
       #
       def error_classes
-        options.fetch(:error_classes, Gruf::Sentry.grpc_error_classes)
+        @options.fetch(:error_classes, Gruf::Sentry.grpc_error_classes)
       end
     end
   end
