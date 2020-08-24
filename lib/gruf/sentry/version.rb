@@ -17,6 +17,6 @@
 #
 module Gruf
   module Sentry
-    VERSION = '0.0.2.pre'
+    VERSION = '0.1.1'
   end
 end
