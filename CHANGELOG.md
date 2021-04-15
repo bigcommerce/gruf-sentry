@@ -2,6 +2,11 @@ Changelog for the gruf-sentry gem.
 
 ### Pending release
 
+### 0.2.0
+
+- Add support for Ruby 3.0
+- Remove support for < Ruby 2.6
+
 ### 0.1.1
 
 - Fix issue with options reference in ErrorParser [#1]
