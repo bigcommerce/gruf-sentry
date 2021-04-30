@@ -16,7 +16,10 @@
 # OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #
 require 'gruf'
-require 'raven'
+require 'sentry-ruby'
+# backwards-compatibly patch for sentry-raven users
+::Raven = ::Sentry unless defined?(::Raven)
+
 require_relative 'sentry/version'
 require_relative 'sentry/configuration'
 require_relative 'sentry/error_parser'
