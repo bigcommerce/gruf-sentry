@@ -49,7 +49,7 @@ describe Gruf::Sentry::ServerInterceptor do
       subject { interceptor.call { true } }
 
       it 'should not report the error' do
-        expect(Raven).to_not receive(:capture_exception)
+        expect(::Sentry).to_not receive(:capture_exception)
         expect { subject }.to_not raise_exception
       end
     end
@@ -67,7 +67,7 @@ describe Gruf::Sentry::ServerInterceptor do
 
       context 'and is a valid gRPC error' do
         it 'should ' do
-          expect(::Raven).to receive(:capture_exception).once
+          expect(::Sentry).to receive(:capture_exception).once
           expect { subject }.to raise_error(GRPC::Internal)
         end
       end
@@ -78,7 +78,7 @@ describe Gruf::Sentry::ServerInterceptor do
         end
 
         it 'should not report the error' do
-          expect(Raven).to_not receive(:capture_exception)
+          expect(::Sentry).to_not receive(:capture_exception)
           expect { subject }.to raise_error(GRPC::Internal)
         end
       end

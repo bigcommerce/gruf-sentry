@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -e
+
+bundle install
+bundle exec rubocop -P -c ./.rubocop.yml
+bundle exec bundle-audit update
+bundle exec bundle-audit check
+bundle exec rspec

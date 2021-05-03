@@ -33,7 +33,7 @@ module Gruf
           yield
         rescue StandardError, GRPC::BadStatus => e
           if error?(e) # only capture
-            ::Raven.capture_exception(
+            ::Sentry.capture_exception(
               e,
               message: e.message,
               extra: {
