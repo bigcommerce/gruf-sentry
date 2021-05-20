@@ -2,6 +2,8 @@ Changelog for the gruf-sentry gem.
 
 ### Pending release
 
+### 1.0.1
+
 - Update Sentry.capture_exception to work with new sentry-ruby format
 
 ### 1.0.0
