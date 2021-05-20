@@ -33,17 +33,15 @@ module Gruf
           yield
         rescue StandardError, GRPC::BadStatus => e
           if error?(e) # only capture
-            ::Sentry.capture_exception(
-              e,
-              message: e.message,
-              extra: {
-                grpc_method: request.method_key,
-                grpc_request_class: request.request_class,
-                grpc_service_key: request.service_key,
-                grpc_error_code: code_for(e),
-                grpc_error_class: e.class
-              }
-            )
+            ::Sentry.configure_scope do |scope|
+              scope.set_transaction_name(request.service_key)
+              scope.set_tags(grpc_method: request.method_key,
+                             grpc_request_class: request.request_class.name,
+                             grpc_service_key: request.service_key,
+                             grpc_error_code: code_for(e),
+                             grpc_error_class: e.class.name)
+            end
+            ::Sentry.capture_exception(e)
           end
           raise # passthrough
         end

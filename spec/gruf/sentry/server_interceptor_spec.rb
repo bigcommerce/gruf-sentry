@@ -67,7 +67,7 @@ describe Gruf::Sentry::ServerInterceptor do
 
       context 'and is a valid gRPC error' do
         it 'should ' do
-          expect(::Sentry).to receive(:capture_exception).once
+          expect(::Sentry).to receive(:capture_exception).once.and_call_original
           expect { subject }.to raise_error(GRPC::Internal)
         end
       end
