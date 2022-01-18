@@ -1,5 +1,5 @@
 AllCops:
-  TargetRubyVersion: 2.6
+  TargetRubyVersion: 2.7
   Exclude:
     - spec/**/*
     - .bundle/**/*
@@ -9,6 +9,9 @@ AllCops:
     - log/**/*
     - Rakefile
     - gruf-sentry.gemspec
+require:
+  - rubocop-performance
+  - rubocop-rspec
 
 Lint/AmbiguousOperator:
   Exclude:

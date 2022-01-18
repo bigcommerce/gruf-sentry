@@ -2,6 +2,11 @@ Changelog for the gruf-sentry gem.
 
 ### Pending release
 
+* Add Ruby 3.1 support
+* Drop Ruby 2.6 support
+* Add CodeClimate coverage
+* Add rubocop-performance and rubocop-rspec in test suite
+
 ### 1.0.1
 
 - Update Sentry.capture_exception to work with new sentry-ruby format
