@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/bigcommerce/gruf-sentry/tree/main.svg?style=svg)](https://circleci.com/gh/bigcommerce/gruf-sentry/tree/main) [![Gem Version](https://badge.fury.io/rb/gruf-sentry.svg)](https://badge.fury.io/rb/gruf-sentry) [![Inline docs](http://inch-ci.org/github/bigcommerce/gruf-sentry.svg?branch=main)](http://inch-ci.org/github/bigcommerce/gruf-sentry)
 
-Adds Sentry error reporting support for [gruf](https://github.com/bigcommerce/gruf) 2.7.0+.
+Adds Sentry error reporting support for [gruf](https://github.com/bigcommerce/gruf) 2.7.0+ and [sentry-ruby](https://github.com/getsentry/sentry-ruby) 4.3+.
 
 This gem will automatically report grpc failures and Gruf errors into Sentry as they happen in servers and clients.
 
