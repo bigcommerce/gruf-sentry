@@ -2,6 +2,9 @@ Changelog for the gruf-sentry gem.
 
 ### Pending release
 
+- Add Ruby 3.1 support
+- Drop Ruby 2.6 support
+
 ### 1.1.0
 
 - Update Gruf::Sentry::ClientInterceptor for new sentry-ruby format

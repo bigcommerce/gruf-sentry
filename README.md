@@ -1,6 +1,6 @@
 # gruf-sentry - Sentry reporting for gruf
 
-[![CircleCI](https://circleci.com/gh/bigcommerce/gruf-sentry/tree/main.svg?style=svg)](https://circleci.com/gh/bigcommerce/gruf-sentry/tree/main) [![Gem Version](https://badge.fury.io/rb/gruf-sentry.svg)](https://badge.fury.io/rb/gruf-sentry) [![Inline docs](http://inch-ci.org/github/bigcommerce/gruf-sentry.svg?branch=main)](http://inch-ci.org/github/bigcommerce/gruf-sentry)
+[![CircleCI](https://circleci.com/gh/bigcommerce/gruf-sentry/tree/main.svg?style=svg)](https://circleci.com/gh/bigcommerce/gruf-sentry/tree/main) [![Gem Version](https://badge.fury.io/rb/gruf-sentry.svg)](https://badge.fury.io/rb/gruf-sentry) [![Inline docs](http://inch-ci.org/github/bigcommerce/gruf-sentry.svg?branch=main)](http://inch-ci.org/github/bigcommerce/gruf-sentry) [![Maintainability](https://api.codeclimate.com/v1/badges/530757a403a4a596dda0/maintainability)](https://codeclimate.com/github/bigcommerce/gruf-sentry/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/530757a403a4a596dda0/test_coverage)](https://codeclimate.com/github/bigcommerce/gruf-sentry/test_coverage)
 
 Adds Sentry error reporting support for [gruf](https://github.com/bigcommerce/gruf) 2.7.0+ and [sentry-ruby](https://github.com/getsentry/sentry-ruby) 4.3+.
 

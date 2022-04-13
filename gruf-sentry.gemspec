@@ -30,14 +30,14 @@ Gem::Specification.new do |spec|
   spec.description   = spec.summary
   spec.homepage      = 'https://github.com/bigcommerce/gruf-sentry'
 
-  spec.required_ruby_version = '>= 2.6'
+  spec.required_ruby_version = '>= 2.7'
 
   spec.files         = Dir['README.md', 'CHANGELOG.md', 'CODE_OF_CONDUCT.md', 'lib/**/*', 'gruf-sentry.gemspec']
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundler-audit', '~> 0.6'
   spec.add_development_dependency 'rake', '>= 12.3'
-  spec.add_development_dependency 'rubocop', '>= 1'
+  spec.add_development_dependency 'rubocop', '>= 1.27'
   spec.add_development_dependency 'pry', '~> 0.14'
   spec.add_development_dependency 'rspec', '>= 3.8'
   spec.add_development_dependency 'rspec_junit_formatter', '~> 0.4'
