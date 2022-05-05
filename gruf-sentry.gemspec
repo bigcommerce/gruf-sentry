@@ -38,11 +38,11 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler-audit', '~> 0.6'
   spec.add_development_dependency 'rake', '>= 12.3'
   spec.add_development_dependency 'rubocop', '>= 1.27'
-  spec.add_development_dependency 'pry', '~> 0.14'
+  spec.add_development_dependency 'pry', '>= 0.14'
   spec.add_development_dependency 'rspec', '>= 3.8'
   spec.add_development_dependency 'rspec_junit_formatter', '~> 0.4'
   spec.add_development_dependency 'simplecov', '>= 0.16'
 
   spec.add_dependency 'gruf', '~> 2.5', '>= 2.5.1'
-  spec.add_dependency 'sentry-ruby', '~> 4.3'
+  spec.add_dependency 'sentry-ruby', '>= 5.0'
 end

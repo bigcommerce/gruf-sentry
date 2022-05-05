@@ -2,6 +2,10 @@ Changelog for the gruf-sentry gem.
 
 ### Pending release
 
+### 1.3.x
+
+- Upgrade to sentry-ruby 5.x
+
 ### 1.2.0
 
 - Add Ruby 3.1 support
