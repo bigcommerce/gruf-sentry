@@ -51,3 +51,7 @@ Metrics/BlockLength:
 
 Style/HashEachMethods:
   Enabled: false
+
+Naming/FileName:
+  Exclude:
+    - lib/gruf-sentry.rb
