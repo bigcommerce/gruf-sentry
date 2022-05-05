@@ -17,14 +17,19 @@
 #
 require 'gruf'
 require 'sentry-ruby'
+
 # backwards-compatibly patch for sentry-raven users
 ::Raven = ::Sentry unless defined?(::Raven)
 
-require_relative 'sentry/version'
-require_relative 'sentry/configuration'
-require_relative 'sentry/error_parser'
-require_relative 'sentry/server_interceptor'
-require_relative 'sentry/client_interceptor'
+# use Zeitwerk to lazily autoload all the files in the lib directory
+require 'zeitwerk'
+root_path = File.dirname(__dir__)
+loader = ::Zeitwerk::Loader.new
+loader.tag = File.basename(__FILE__, '.rb')
+loader.inflector = ::Zeitwerk::GemInflector.new(__FILE__)
+loader.ignore(File.join(root_path, 'gruf-sentry.rb'))
+loader.push_dir(root_path)
+loader.setup
 
 ##
 # Base gruf module
