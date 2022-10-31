@@ -24,7 +24,7 @@ module Gruf
       VALID_CONFIG_KEYS = {
         grpc_error_classes: ::ENV.fetch(
           'GRUF_SENTRY_GRPC_ERROR_CLASSES',
-          'GRPC::Unknown,GRPC::Internal,GRPC::DataLoss,GRPC::FailedPrecondition,GRPC::Unavailable,GRPC::DeadlineExceeded,GRPC::Cancelled'
+          'GRPC::Unknown,GRPC::Internal,GRPC::DataLoss,GRPC::Unavailable,GRPC::DeadlineExceeded,GRPC::Cancelled'
         ).to_s.split(',').map(&:strip),
         default_error_code: ::ENV.fetch('GRUF_SENTRY_DEFAULT_ERROR_CODE', GRPC::Core::StatusCodes::INTERNAL).to_i,
         ignore_methods: ::ENV.fetch('GRUF_SENTRY_IGNORE_METHODS', '').split(',').map(&:strip) || []
