@@ -2,7 +2,7 @@ Changelog for the gruf-sentry gem.
 
 ### Pending release
 
-### 1.4.x
+### 1.4.0
 
 * Remove `GRPC::FailedPrecondition` from default error classes (equivalent is HTTP 412, so not an internal error)
 * Remove `Raven` compatibility layer; you must be on sentry-ruby now
