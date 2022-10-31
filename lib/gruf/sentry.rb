@@ -18,9 +18,6 @@
 require 'gruf'
 require 'sentry-ruby'
 
-# backwards-compatibly patch for sentry-raven users
-::Raven = ::Sentry unless defined?(::Raven)
-
 # use Zeitwerk to lazily autoload all the files in the lib directory
 require 'zeitwerk'
 root_path = File.dirname(__dir__)

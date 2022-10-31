@@ -5,36 +5,37 @@ Changelog for the gruf-sentry gem.
 ### 1.4.x
 
 * Remove `GRPC::FailedPrecondition` from default error classes (equivalent is HTTP 412, so not an internal error)
+* Remove `Raven` compatibility layer; you must be on sentry-ruby now
 
 ### 1.3.0
 
-- Upgrade to sentry-ruby 5.x
+* Upgrade to sentry-ruby 5.x
 
 ### 1.2.0
 
-- Add Ruby 3.1 support
-- Drop Ruby 2.6 support
+* Add Ruby 3.1 support
+* Drop Ruby 2.6 support
 
 ### 1.1.0
 
-- Update Gruf::Sentry::ClientInterceptor for new sentry-ruby format
+* Update Gruf::Sentry::ClientInterceptor for new sentry-ruby format
 
 ### 1.0.1
 
-- Update Sentry.capture_exception to work with new sentry-ruby format
+* Update Sentry.capture_exception to work with new sentry-ruby format
 
 ### 1.0.0
 
-- Update to sentry-ruby
+* Update to sentry-ruby
 
 ### 0.2.0
 
-- Add support for Ruby 3.0
-- Remove support for < Ruby 2.6
+* Add support for Ruby 3.0
+* Remove support for < Ruby 2.6
 
 ### 0.1.1
 
-- Fix issue with options reference in ErrorParser [#1]
+* Fix issue with options reference in ErrorParser [#1]
 
 ### 0.1.0
 
