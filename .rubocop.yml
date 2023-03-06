@@ -55,3 +55,6 @@ Style/HashEachMethods:
 Naming/FileName:
   Exclude:
     - lib/gruf-sentry.rb
+
+Style/RedundantConstantBase:
+  Enabled: false

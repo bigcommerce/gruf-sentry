@@ -2,6 +2,9 @@ Changelog for the gruf-sentry gem.
 
 ### Pending release
 
+- Add support for Ruby 3.2
+- Drop support for Ruby 2.7 (EOL March 2023)
+
 ### 1.4.0
 
 * Remove `GRPC::FailedPrecondition` from default error classes (equivalent is HTTP 412, so not an internal error)
