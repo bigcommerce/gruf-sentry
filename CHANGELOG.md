@@ -2,6 +2,8 @@ Changelog for the gruf-sentry gem.
 
 ### Pending release
 
+### 1.5.0
+
 - Add support for Ruby 3.2
 - Drop support for Ruby 2.7 (EOL March 2023)
 
