@@ -17,16 +17,7 @@
 #
 require 'gruf'
 require 'sentry-ruby'
-
-# use Zeitwerk to lazily autoload all the files in the lib directory
-require 'zeitwerk'
-root_path = File.dirname(__dir__)
-loader = ::Zeitwerk::Loader.new
-loader.tag = File.basename(__FILE__, '.rb')
-loader.inflector = ::Zeitwerk::GemInflector.new(__FILE__)
-loader.ignore(File.join(root_path, 'gruf-sentry.rb'))
-loader.push_dir(root_path)
-loader.setup
+require_relative '../autoloader'
 
 ##
 # Base gruf module

@@ -26,7 +26,7 @@ module Gruf
       ##
       # Handle the gruf around hook and capture errors
       #
-      def call(&_block)
+      def call(&)
         return yield if Gruf::Sentry.ignore_methods.include?(request.method_name)
 
         begin

@@ -2,7 +2,8 @@ Changelog for the gruf-sentry gem.
 
 ### Pending release
 
-- Add CI suite for Ruby 3.3
+- Add support for Ruby 3.4, 3.3
+- Drop support for Ruby 3.0, 3.1
 
 ### 1.5.0
 
