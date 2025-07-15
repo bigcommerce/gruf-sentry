@@ -33,9 +33,9 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = '>= 3.0', '< 4'
 
   spec.files         = Dir['README.md', 'CHANGELOG.md', 'CODE_OF_CONDUCT.md', 'lib/**/*', 'gruf-sentry.gemspec']
-  spec.require_paths = ['lib']
+  spec.require_paths = %w[lib]
 
   spec.add_runtime_dependency 'gruf', '~> 2.5', '>= 2.5.1'
   spec.add_runtime_dependency 'sentry-ruby', '>= 5.0'
-  spec.add_runtime_dependency 'zeitwerk', '~> 2'
+  spec.add_runtime_dependency 'zeitwerk', '>= 2'
 end
