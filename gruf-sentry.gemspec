@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
   spec.description   = spec.summary
   spec.homepage      = 'https://github.com/bigcommerce/gruf-sentry'
 
-  spec.required_ruby_version = '>= 3.0', '< 4'
+  spec.required_ruby_version = '>= 3.0', '< 5'
 
   spec.files         = Dir['README.md', 'CHANGELOG.md', 'CODE_OF_CONDUCT.md', 'lib/**/*', 'gruf-sentry.gemspec']
   spec.require_paths = %w[lib]
