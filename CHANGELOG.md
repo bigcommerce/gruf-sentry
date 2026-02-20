@@ -2,6 +2,8 @@ Changelog for the gruf-sentry gem.
 
 ### Pending release
 
+- Add support for Ruby 4.0
+
 ## 1.6.1
 
 - Fix autoloading issue in certain Rails environments

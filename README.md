@@ -1,6 +1,6 @@
 # gruf-sentry - Sentry reporting for gruf
 
-[![CircleCI](https://circleci.com/gh/bigcommerce/gruf-sentry/tree/main.svg?style=svg)](https://circleci.com/gh/bigcommerce/gruf-sentry/tree/main) [![Gem Version](https://badge.fury.io/rb/gruf-sentry.svg)](https://badge.fury.io/rb/gruf-sentry) [![Inline docs](http://inch-ci.org/github/bigcommerce/gruf-sentry.svg?branch=main)](http://inch-ci.org/github/bigcommerce/gruf-sentry) [![Maintainability](https://api.codeclimate.com/v1/badges/530757a403a4a596dda0/maintainability)](https://codeclimate.com/github/bigcommerce/gruf-sentry/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/530757a403a4a596dda0/test_coverage)](https://codeclimate.com/github/bigcommerce/gruf-sentry/test_coverage)
+[![CircleCI](https://circleci.com/gh/bigcommerce/gruf-sentry/tree/main.svg?style=svg)](https://circleci.com/gh/bigcommerce/gruf-sentry/tree/main) [![Gem Version](https://badge.fury.io/rb/gruf-sentry.svg)](https://badge.fury.io/rb/gruf-sentry) [![Inline docs](http://inch-ci.org/github/bigcommerce/gruf-sentry.svg?branch=main)](http://inch-ci.org/github/bigcommerce/gruf-sentry)
 
 Adds Sentry error reporting support for [gruf](https://github.com/bigcommerce/gruf) 2.7.0+
 and [sentry-ruby](https://github.com/getsentry/sentry-ruby) 4.3+.
@@ -29,7 +29,7 @@ It comes with a few more options as well:
 |--------------------|------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | ignore_methods     | A list of method names to ignore from logging. E.g. `['namespace.health.check']`               | `[]`                                                                                                                            | GRUF_SENTRY_IGNORE_METHODS       |
 | grpc_error_classes | A list of gRPC error classes that will be used for detecting errors (as opposed to validation) | `GRPC::Unknown,GRPC::Internal,GRPC::DataLoss,GRPC::FailedPrecondition,GRPC::Unavailable,GRPC::DeadlineExceeded,GRPC::Cancelled` | GRUF_SENTRY_GRPC_ERROR_CLASSES   |
-| default_error_code | The default gRPC error code to use (int value)                                                 | `GRPC::Core::StatusCodes::INTERNAL`                                                                                             | `GRUF_SENTRY_DEFAULT_ERROR_CODE` |                                                                               
+| default_error_code | The default gRPC error code to use (int value)                                                 | `GRPC::Core::StatusCodes::INTERNAL`                                                                                             | `GRUF_SENTRY_DEFAULT_ERROR_CODE` |
 
 ### Client Interceptors
 
